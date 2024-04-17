@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="a.jsp" >
     <h1>상품 주문서</h1>
-    <form>
+    
         <fieldset>
             <legend>개인 정보</legend>
             <ul>
@@ -21,14 +22,14 @@
                 </li>
             </ul>
         </fieldset>
-    </form>
-    <form>
+    
+    
         <fieldset>
             <legend>배송 정보</legend>
             <ul>
                 <li>
                     <label for="op">배송 옵션</label>
-                    <label><input type="radio" name="sub" value="place">기존 배송지</label>
+                    <label><input type="radio" name="sub" value="place" checked>기존 배송지 </label>
                     <label><input type="radio" name="sub" value="new">새 배송지</label>
                 </li>
                 <li>
@@ -46,8 +47,8 @@
                 </li>
             </ul>
         </fieldset>
-    </form>
-    <form>
+    
+    
         <fieldset>
             <legend>주문 정보</legend>
             상품 <br>
@@ -56,29 +57,30 @@
             <label><input type="checkbox">방울토마토2kg <del>20,000원</del>16,000원 <input type="text">박스</label><br>
             <label><input type="checkbox">방울토마토3kg <del>30,000원</del>24,000원 <input type="text">박스</label><br>
             <label for="git">기타사항</label>
-            <input type="textarea" id="git" size="30">
+            <textarea name="git" id="git" cols="42" rows="5"></textarea>
         </fieldset>
-    </form>
-    <form>
+    
+    
         <fieldset>
             <legend>결제 수단</legend>
             <ul>
                 <li>
-                    <label><input type="radio">계좌 이체</label>
+                    <label><input type="radio" name="gel" checked>계좌 이체</label>
                 </li>
                 <li>
-                    <label><input type="radio">카드 결제</label>
+                    <label><input type="radio" name="gel">카드 결제</label>
                 </li>
                 <li>
-                    <label><input type="radio">일반 결제</label>
+                    <label><input type="radio" name="gel">일반 결제</label>
                 </li>
             </ul>
         </fieldset>
-    </form>
+    
     <br>
     <br>
 
     <input type="reset" value="초기화">
     <input type="submit" value="결제하기">
+</form>
 </body>
 </html>
